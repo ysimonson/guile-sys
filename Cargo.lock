@@ -109,7 +109,7 @@ version = "0.2.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
-name = "guile-sys-2018"
+name = "guile-sys-2"
 version = "0.1.0"
 dependencies = [
  "bindgen 0.42.3 (registry+https://github.com/rust-lang/crates.io-index)",

@@ -4,6 +4,10 @@ version = "0.1.0"
 authors = ["Yusuf Simonson <simonson@gmail.com>"]
 edition = "2018"
 build = "build.rs"
+description = "Low-level bindings to guile"
+license = "GPL-2.0-or-later"
+license-file = "LICENSE.txt"
+repository = "https://github.com/ysimonson/guile-sys"
 
 [lib]
 name = "guile_sys"
