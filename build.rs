@@ -44,7 +44,7 @@ fn main() {
     }
 
     for arg in lib_args {
-        println!("cargo:rustc-link-lib=static={}", arg);
+        println!("cargo:rustc-link-lib={}", arg);
     }
 
     let mut bindings = bindgen::Builder::default();
