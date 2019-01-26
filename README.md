@@ -9,4 +9,6 @@ Low-level (bindgen) Rust bindings to [GNU Guile](https://www.gnu.org/software/gu
 
 ## Notes
 
-Documentation was generated on macOS. If you use a different platform, some of the things in the docs won't be available to you, and some things that you have access to will not be in the docs; e.g. you can disregard anything with darwin in its name. Generally these items should not be directly used anyways.
+First and foremost, you probably don't want to use this or any other guile bundings for rust. Guile liberally uses `setjmp`/`longjmp`, which breaks rust destructors. I don't see how this could be avoided without seriously crippling it ergonomically.
+
+Second, documentation was generated on macOS. If you use a different platform, some of the things in the docs won't be available to you, and some things that you have access to will not be in the docs; e.g. you can disregard anything with darwin in its name. Generally these items should not be directly used anyways.
