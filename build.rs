@@ -13,6 +13,7 @@ fn config_args(cmd: &str) -> Vec<String> {
         .stdout;
     str::from_utf8(&out)
         .expect(&format!("Could not decode `guile-config {}` output as utf-8", cmd))
+        .trim()
         .split(" ")
         .map(|s| s.to_string())
         .collect()
